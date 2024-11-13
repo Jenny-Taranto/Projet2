@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .main-container {
@@ -121,8 +122,26 @@ a {
     margin-bottom: 5px;
 }
 
+/*Ci-dessous le code du header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
 
+.logoheader {
+    max-width: 50px;
+    max-height: auto;
+}
 
+nav a {
+    margin-left: 60px;
+    padding-top: 10px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
