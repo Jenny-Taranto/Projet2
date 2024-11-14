@@ -159,9 +159,17 @@ p {
 
 /*Ci-dessous le code pour la barre de recherche*/
 
+.search {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .iconlocation {
+    max-width: 10px;
+    max-height: auto;
     background-color:#F2F2F2;
     padding: 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 input::placeholder {
@@ -190,6 +198,7 @@ input::placeholder {
     border-color:#0065FC;
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
+    position:relative; left: -5px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
