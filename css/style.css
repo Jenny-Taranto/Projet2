@@ -429,9 +429,22 @@ footer div {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards {
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap : 100px;
+    }
+
+    footer div {
+        width : 33%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .filterbar {
+        
+    }
 }
