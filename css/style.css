@@ -99,7 +99,7 @@ p {
     display: flex;
     justify-content: flex-start;
     margin-block-start: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .fa-location-dot {
@@ -156,7 +156,7 @@ input::placeholder {
 .filtertitle2 {
     
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -164,7 +164,7 @@ input::placeholder {
 .filterbar {
     display: flex;
     gap: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .filterbar i {
@@ -191,7 +191,7 @@ button:hover {
     display : flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .fa-info {
@@ -204,11 +204,12 @@ button:hover {
     padding: 5px;
     padding-right: 9px;
     padding-left: 9px;
-    margin: 10px;
+    margin-right: 8px;
 }
 
 .pinfo {
-    margin-bottom:10px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -241,7 +242,6 @@ button:hover {
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 30px;
-    flex-grow: 1;
 }
 
 .marseille-card {
@@ -285,7 +285,7 @@ button:hover {
 .afficherplus {
     font-weight: bold;
     font-size: 18px;
-    margin: 0;
+    margin-left: 5px;
 }
 
 /****** Populaires ***********/
@@ -393,6 +393,26 @@ footer div {
 
 /* Medium devices (tablets, less/equal than 1024px) */
     @media (max-width: 1024px) {
+
+        .filterbar {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .filtertitle {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+        }
 
         .hebergements-and-populaires {
             flex-direction: column;
