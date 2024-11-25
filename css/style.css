@@ -394,6 +394,10 @@ footer div {
 /* Medium devices (tablets, less/equal than 1024px) */
     @media (max-width: 1024px) {
 
+        header {
+            width: 924px;
+        }
+
         .filterbar {
             display: flex;
             flex-wrap: wrap;
@@ -419,18 +423,32 @@ footer div {
         }
 
         .hebergements {
-            width: 100%;
+            width: 924px;
+        }
+
+        .marseille-cards {
+            justify-content: flex-start;
+            gap: 30px;
+        }
+
+        .marseille-card {
+            height: 207.25px;
+            width: 258px;
         }
 
         .populaires {
-            width: 100%;
+            width: 924px;
             margin-top: 50px;
         }
 
         .populaires-cards {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            gap: 35px;
+            justify-content: flex-start;
+        }
+
+        .card {
+            width: 264.67px;
         }
 
         .populaires-cards a {
@@ -447,13 +465,33 @@ footer div {
 
         .activites-cards {
             width: 100%;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap : 100px;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            gap : 30px;
+        }
+
+        .activite-card {
+            height: 270px;
+            width: 193.5px;
+        }
+
+        .activite-content {
+            width: auto;        }
+
+        .activite-card img {
+            width:auto;
+            height: 200px;
+        }
+
+        footer {
+            width: 924px;
+            height: 163px;
         }
 
         footer div {
             width : 33%;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 
