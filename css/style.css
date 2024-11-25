@@ -496,46 +496,83 @@ footer div {
     }
 
     /* Small devices (phones, less than 768px) */
-    @media (max-width: 768px) and (min-width: 320px) {
+    @media (max-width: 375px) {
+        .main-container {
+            width: 100%;
+            max-width: 375px;
+            padding: 0 50px;
+            box-sizing: border-box;
+        }
 
-        .filtertitle {
-            font-weight: bold;
+        header {
+            width: 375px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;   
+        }
+
+        .logoheader {
+            max-width:120px;
+            justify-content: center;
+        }
+
+        nav {
+            width: 375px;
+        }
+
+        nav a {
+            width: 187.5px;
+            padding-bottom: 10px;
             font-size: 16px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .filtertitle2 {
-            
-            font-weight: bold;
-            font-size: 15px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        
-        .filterbar {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 35px;
-        }
-        
-        .filterbar i {
-            font-size: 18px;
-            padding-left: 10px;
+            margin: 0;
         }
 
-        .marseille-cards {
-            justify-content: space-evenly;
-            gap : 30px;
+        nav a:hover {
+            color: #0065FC;
+            border-bottom: 2px #0065FC solid;
+            border-top: 0px;
+        }   
+
+        .buttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 50px;
         }
 
-        .activites-cards {
-            gap: 30px;
+        button {
+            flex-grow: 1;
+            height: 50px;
+        }
+
+        .hebergements {
+            width: 375px;
+        }
+
+        .populaires {
+            width: 375px;
+        }
+
+        .populaires-cards {
+            width: 375px;
+            flex-direction:column;
         }
 
         .activites {
-            width: 100%;
-            justify-content: space-evenly;
-            padding: 0;
+            width: 315px;
+        }
+
+        .activites-cards {
+            width: 315px;
+            flex-direction:column;
+        }
+
+        footer {
+            width: 375px;
+            height: 461px;
+            flex-direction:column;
+        }
+
+        footer div {
+            width: 263.67px;
         }
     }
