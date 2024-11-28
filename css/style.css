@@ -24,6 +24,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    margin: 0 auto;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -114,7 +115,6 @@ form {
     justify-content: center;
     align-items: center;
     color:black;
-    width: 15px;
     height: 49px;
     padding-left: 15px;
     padding-right: 15px;
@@ -131,7 +131,7 @@ input::placeholder {
 }
 
 .searchlocation {
-    width: 150px;
+    width: 195px;
     padding: 15px;
     border-style: solid;
     border-width: 1px;
@@ -521,11 +521,12 @@ footer div {
     /* Small devices (phones, less than 768px and more than 320px) */
     @media screen and (max-width: 767px) {
 
-        body {
-            padding: 20px;
+        .main-container {
+            padding:0;
         }
 
         header {
+            width: 100%;
             flex-direction: column;
             align-items: center;
         }
@@ -535,7 +536,7 @@ footer div {
         }
 
         nav {
-            width: 375px;
+            width: 100%;
             display: flex;
             justify-content: center;
         }
@@ -563,7 +564,7 @@ footer div {
         .cta, .cta-p {
             padding-left: 20px;
             padding-right: 20px;
-            width: 335px;
+            width: 100%;
         }
 
         .cta {
@@ -575,13 +576,14 @@ footer div {
 
         .search {
             display: flex;
-            width: 375px;
-            padding: 0;
+            width: 100%;
+            padding: 20px 20px 50px 20px;
+            margin: 0;
         }
 
         .searchlocation {
-            width: 261px;
-            padding-right:0;
+            width: 290px;
+            height: 49px;
         }
 
         .submitlocation {
@@ -597,6 +599,7 @@ footer div {
             background-color: #0065FC;
             border-color:#0065FC;
             border-width: 1px;
+            margin-left: -45px;
         }
 
         form {
@@ -604,14 +607,14 @@ footer div {
         }
 
         .filterbar {
-            width: 375px;
+            width: 100%;
             flex-wrap:wrap;
-            padding: 0;
-            margin-bottom: 35px;
+            padding: 20px;
+            margin-bottom: 0;
         }
 
         .filtertitle {
-            width: 375px;
+            flex-grow: 2;
         }
 
         button {
@@ -621,9 +624,8 @@ footer div {
         }
 
         .info {
-            width: 375px;
-            padding: 0;
-            margin-bottom: 35;
+            width: 100%;
+            margin: 0;
         }
 
         .section-title {
@@ -646,20 +648,20 @@ footer div {
         }
 
         .hebergements {
-            width: 375px;
+            width: 100%;
             order: 1;
             padding: 20px;
         }
 
         .populaires {
-            width: 375px;
+            width: 100%;
             order: 0;
             padding: 20px;
             margin-top: 10px;
         }
 
         .populaires-cards {
-            width: 375px;
+            width: 100%;
             flex-direction:column;
             gap: 15px;
         }
