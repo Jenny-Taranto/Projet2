@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -16,7 +17,8 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 0;
+    padding-top: 20px;
 }
 
 .main-container {
@@ -415,10 +417,10 @@ footer div {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
-    @media (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
 
         header {
-            width: 924px;
+            width: 100%;
         }
 
         .filterbar {
@@ -517,14 +519,13 @@ footer div {
     }
 
     /* Small devices (phones, less than 768px and more than 320px) */
-    @media (max-width: 768px) and (min-width: 320px) {
+    @media screen and (max-width: 767px) {
 
         body {
             padding: 20px;
         }
 
         header {
-            width: 375px;
             flex-direction: column;
             align-items: center;
         }
